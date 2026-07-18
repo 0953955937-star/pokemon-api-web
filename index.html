@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokéDex Interactiva - API</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>PokéDex Profesional</h1>
+        <p>Buscador avanzado por Tipos y Generaciones</p>
+    </header>
+
+    <!-- Sección de Filtros Requerida -->
+    <section class="filters-container">
+        <input type="text" id="search-input" placeholder="Buscar Pokémon por nombre...">
+        
+        <select id="type-select">
+            <option value="all">Todos los Tipos</option>
+            <option value="grass">Planta (Grass)</option>
+            <option value="fire">Fuego (Fire)</option>
+            <option value="water">Agua (Water)</option>
+            <option value="bug">Bicho (Bug)</option>
+            <option value="normal">Normal</option>
+            <option value="poison">Veneno (Poison)</option>
+            <option value="electric">Eléctrico (Electric)</option>
+            <option value="ground">Tierra (Ground)</option>
+            <option value="fairy">Hada (Fairy)</option>
+        </select>
+
+        <select id="generation-select">
+            <option value="all">Todas las Generaciones</option>
+            <option value="1">1ra Generación (Kanto)</option>
+            <option value="2">2da Generación (Johto)</option>
+            <option value="3">3ra Generación (Hoenn)</option>
+            <option value="4">4ta Generación (Sinnoh)</option>
+            <option value="5">5ta Generación (Unova)</option>
+        </select>
+    </section>
+
+    <main>
+        <section id="pokemon-container" class="grid-container"></section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Desarrollo Web Front-End</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
